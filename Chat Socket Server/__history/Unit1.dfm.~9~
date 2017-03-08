@@ -1,0 +1,160 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 382
+  ClientWidth = 698
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 19
+  object pnl1: TPanel
+    Left = 0
+    Top = 0
+    Width = 698
+    Height = 382
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 360
+    ExplicitTop = 232
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object grp1: TGroupBox
+      Left = 16
+      Top = 0
+      Width = 337
+      Height = 369
+      Caption = 'grp1'
+      TabOrder = 0
+      object edtmsg: TEdit
+        Left = 16
+        Top = 29
+        Width = 297
+        Height = 27
+        TabOrder = 0
+      end
+      object btn2: TButton
+        Left = 16
+        Top = 65
+        Width = 75
+        Height = 25
+        Caption = 'Send'
+        TabOrder = 1
+      end
+      object mmo1: TMemo
+        Left = 16
+        Top = 112
+        Width = 297
+        Height = 246
+        TabOrder = 2
+      end
+    end
+    object grp2: TGroupBox
+      Left = 368
+      Top = 0
+      Width = 321
+      Height = 369
+      Caption = 'Settings'
+      TabOrder = 1
+      object lbl1: TLabel
+        Left = 16
+        Top = 32
+        Width = 90
+        Height = 19
+        Caption = 'Port to listen'
+      end
+      object lbl2: TLabel
+        Left = 16
+        Top = 168
+        Width = 68
+        Height = 19
+        Caption = 'IP Adress'
+      end
+      object lbl3: TLabel
+        Left = 16
+        Top = 216
+        Width = 91
+        Height = 19
+        Caption = 'Remote Host'
+      end
+      object lbl4: TLabel
+        Left = 16
+        Top = 272
+        Width = 43
+        Height = 19
+        Caption = 'Status'
+      end
+      object lbl5: TLabel
+        Left = 16
+        Top = 320
+        Width = 56
+        Height = 19
+        Caption = 'Local IP'
+      end
+      object edtlistenport: TEdit
+        Left = 16
+        Top = 64
+        Width = 121
+        Height = 27
+        TabOrder = 0
+      end
+      object btn1: TButton
+        Left = 184
+        Top = 65
+        Width = 75
+        Height = 25
+        Caption = 'Listen'
+        TabOrder = 1
+        OnClick = btn1Click
+      end
+      object chk1: TCheckBox
+        Left = 16
+        Top = 112
+        Width = 97
+        Height = 17
+        Caption = 'Connected'
+        TabOrder = 2
+      end
+      object edtipadress: TEdit
+        Left = 168
+        Top = 165
+        Width = 121
+        Height = 27
+        TabOrder = 3
+      end
+      object edtremoteadress: TEdit
+        Left = 168
+        Top = 213
+        Width = 121
+        Height = 27
+        TabOrder = 4
+      end
+      object edtstatus: TEdit
+        Left = 168
+        Top = 269
+        Width = 121
+        Height = 27
+        TabOrder = 5
+      end
+      object edtlocalip: TEdit
+        Left = 168
+        Top = 317
+        Width = 121
+        Height = 27
+        TabOrder = 6
+      end
+    end
+  end
+  object srvrsckt1: TServerSocket
+    Active = False
+    Port = 0
+    ServerType = stNonBlocking
+    Left = 656
+    Top = 24
+  end
+end
